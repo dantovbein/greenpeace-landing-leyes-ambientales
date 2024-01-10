@@ -103,7 +103,7 @@ export const Component:FC<{}> = () => {
             headers,
             body: JSON.stringify({
               email: user.email,
-              votacion_leyes_ambientales: true,
+              votacion_leyes_ambientales: 'SI',
               // fullName: user.fullName,
               // firstname: user.firstName,
               // lastname: user.lastName,
