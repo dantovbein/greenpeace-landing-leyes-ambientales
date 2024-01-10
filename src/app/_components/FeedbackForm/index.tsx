@@ -67,6 +67,8 @@ export const Component:FC<{}> = () => {
       // validateEmptyField(user.province),
     ]
 
+    console.log(checks)
+
     checks.forEach((check:any) => {
       if(isValid && !check.isValid) {
         isValid = false
