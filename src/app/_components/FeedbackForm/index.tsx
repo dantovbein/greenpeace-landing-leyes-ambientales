@@ -113,7 +113,7 @@ export const Component:FC<{}> = () => {
             }),
           }
         );
-
+        console.log(resHubsot)
         if(resHubsot.ok) {
           window.dataLayer.push({
             event: "formSubmission",
@@ -164,6 +164,7 @@ export const Component:FC<{}> = () => {
 
   const onSubmit = useCallback(
     async (evt: React.FormEvent) => {
+      console.log('Submit')
       evt.preventDefault();
       postData();
     },
