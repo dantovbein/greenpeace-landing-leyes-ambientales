@@ -1,0 +1,25 @@
+{
+  "name": "greenpeace-landing-leyes-ambientales",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "cp ./.env.local.sample ./.env.local && next dev",
+    "build": "cp ./.env.production.sample ./.env.production && rm -rf ./out && next build",
+    "start": "next start",
+    "lint": "next lint",
+    "types": "ln -s $(pwd)/types $(pwd)/node_modules/@types/greenpeace"
+  },
+  "dependencies": {
+    "@types/node": "20.3.0",
+    "@types/react": "18.2.11",
+    "@types/react-dom": "18.2.4",
+    "eslint": "8.42.0",
+    "eslint-config-next": "13.4.5",
+    "moment": "^2.29.4",
+    "next": "13.4.5",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-share": "^4.4.1",
+    "typescript": "5.1.3"
+  }
+}

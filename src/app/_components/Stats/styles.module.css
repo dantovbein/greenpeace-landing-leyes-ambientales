@@ -1,0 +1,105 @@
+.main {
+  text-align: center;
+  padding: 0;
+  margin-bottom: 1rem;
+  min-height: 6rem;
+  width: 100%;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.heading {
+  margin-bottom: 10px;
+}
+
+.results {
+  display: flex;
+  flex-direction: row;
+}
+
+.answer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.answerBar {
+  display: flex;
+  background-color: rgb(225, 225, 225);
+  width: 0;
+  transition: width 2s ease;
+  animation-delay: 10s;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  
+}
+
+.answerBar:first-child {
+  padding-left: 20px;
+}
+
+.answerBar:last-child {
+  padding-left: 10px;
+
+  padding-right: 30px;
+}
+
+.answer:not(:last-child) {
+  margin-bottom: 0.75rem;
+}
+
+.wrapper span {
+  font-size: 20px;
+}
+
+.results {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.answerCounter {
+  margin-bottom: 1.25rem;
+}
+
+.answerCounter h1 {
+  font-size: 5rem;
+  line-height: 100%;
+}
+
+.answerCounter:nth-child(2) h1 {
+  color: lightgrey;
+}
+
+.bar {
+  display: flex;
+  flex-direction: row;
+}
+
+.bar div:first-child {
+  background-color: grey;
+  color: white;
+}
+
+@media (min-width: 992px) {
+  .main {
+    padding: 2rem;
+    
+  }
+
+  .results { 
+    flex-direction: row;
+  }
+
+  .answerCounter {
+    margin-bottom: 0;
+  }
+
+  .answerCounter h1 {
+    font-size: 6rem;
+  }
+}

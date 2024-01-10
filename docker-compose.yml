@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  greenpeace-landing-leyes-ambientales:
+    image: greenpeace/landing-leyes-ambientales
+    container_name: greenpeace-landing-leyes-ambientales
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '3000:80'
+    environment:
+      - PORT=3000
