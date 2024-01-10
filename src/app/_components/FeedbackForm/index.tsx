@@ -180,56 +180,54 @@ export const Component:FC<{}> = () => {
   ])
 
   return useMemo(() => (
-    <>
-      <form className={styles.main} onSubmit={onSubmit}>
-        <h2 className={styles.subHeading}>Si querés sumar tu apoyo a la campaña y recibir información, completá el siguiente formulario:</h2>
-        <div ref={userRef} className={styles.userSection}>
-          <div className={styles.row}>
-            <div className={styles.column}>
-              <label htmlFor='firstName'>
-                <input
-                  name='firstName'
-                  placeholder='Nombre'
-                  value={user.firstName}
-                  minLength={5}
-                  onChange={onChange}
-                />
-              </label>
-            </div>
-            <div className={styles.column}>
-              <label htmlFor='lastName'>
-                <input
-                  name='lastName'
-                  placeholder='Apellido'
-                  value={user.lastName}
-                  minLength={5}
-                  onChange={onChange}
-                />
-              </label>
-            </div>
+    <form className={styles.main} onSubmit={onSubmit}>
+      <h2 className={styles.subHeading}>Si querés sumar tu apoyo a la campaña y recibir información, completá el siguiente formulario:</h2>
+      <div ref={userRef} className={styles.userSection}>
+        <div className={styles.row}>
+          <div className={styles.column}>
+            <label htmlFor='firstName'>
+              <input
+                name='firstName'
+                placeholder='Nombre'
+                value={user.firstName}
+                minLength={5}
+                onChange={onChange}
+              />
+            </label>
           </div>
-          <div className={styles.row}>
+          <div className={styles.column}>
+            <label htmlFor='lastName'>
+              <input
+                name='lastName'
+                placeholder='Apellido'
+                value={user.lastName}
+                minLength={5}
+                onChange={onChange}
+              />
+            </label>
+          </div>
+        </div>
+        <div className={styles.row}>
+          <div className={styles.column}>
             <div className={styles.column}>
-              <div className={styles.column}>
-                <label htmlFor='email'>
-                  <input onChange={onChange} type='email' name='email' placeholder='Correo electrónico' value={user.email} />
-                </label>
-              </div>
+              <label htmlFor='email'>
+                <input onChange={onChange} type='email' name='email' placeholder='Correo electrónico' value={user.email} />
+              </label>
             </div>
           </div>
         </div>
-        <nav className={styles.nav}>
-          <button
-            className={styles.submitBtn}
-            type='submit'
-            disabled={(submitting || submitted)}
-          >
-            {submitting ? 'ENVIANDO ...' :'ENVIAR'}
-          </button>
-        </nav>
-        {(error) && <span className={styles.error}>{error}</span>}
-      </form>
-    </>
+      </div>
+      <nav className={styles.nav}>
+        <button
+          className={styles.submitBtn}
+          type='submit'
+          disabled={(submitting || submitted)}
+        >
+          {submitting ? 'ENVIANDO ...' :'ENVIAR'}
+        </button>
+      </nav>
+      {(error) && <span className={styles.error}>{error}</span>}
+    </form>
   ), [
     user,
     submitting,

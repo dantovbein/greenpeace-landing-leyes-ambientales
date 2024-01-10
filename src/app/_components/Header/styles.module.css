@@ -50,7 +50,8 @@
 }
 
 .highlighted {
-  color: #ffe100;
+  /* color: #ffe100; */
+  color: white;
 }
 
 .url {
@@ -62,7 +63,7 @@
 
 .slider {
   position: relative;
-  height: 400px;
+  height: 600px;
 }
 
 .sliderWrapper {
@@ -86,11 +87,12 @@
   }
 
   .headerText {
-    bottom: 80px;
+    bottom: 30px;
+    width: 75%;
   }
 
   .headerText p {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     padding: 0 10px;
   }
 
@@ -107,6 +109,6 @@
   }
 
   .heading {
-    font-size: 5rem;
+    font-size: 4rem;
   }
 }
