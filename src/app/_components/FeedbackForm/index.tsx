@@ -115,7 +115,7 @@ export const Component:FC<{}> = () => {
             }),
           }
         );
-        console.log(resHubsot)
+        console.log(resHubsot.ok)
         if(resHubsot.ok) {
           window.dataLayer.push({
             event: "formSubmission",
