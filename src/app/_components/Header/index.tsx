@@ -5,7 +5,8 @@ import styles from '@/app/_components/Header/styles.module.css'
 import { useAppContext } from '@/app/_contexts/app';
 
 const pictures: Array<string> = [
-  `${process.env.NEXT_PUBLIC_BASE_PATH}/images/banner/banner.png`,
+  // `${process.env.NEXT_PUBLIC_BASE_PATH}/images/banner/banner.png`,
+  'https://imagedelivery.net/4UjGyQauyQ4cqduHdPPkww/acdc174d-5c4a-4b41-af3a-d87756472200/public',
   // `https://imagedelivery.net/4UjGyQauyQ4cqduHdPPkww/8ca859c1-9d1d-4061-b7af-21c0d1d2e500/public`,
   // `${process.env.NEXT_PUBLIC_BASE_PATH}/images/banner/banner2.jpg`,
   // `${process.env.NEXT_PUBLIC_BASE_PATH}/images/banner/banner3.jpg`,
@@ -60,9 +61,9 @@ export default function Header() {
       <div className={styles.headerText}>
         <div 
           className={styles.urgentIcon}
-          style={{
-            backgroundImage: `url(${process.env.NEXT_PUBLIC_BASE_PATH}/images/icons/sello-urg.png)`,
-          }}
+          // style={{
+          //   backgroundImage: `url(${process.env.NEXT_PUBLIC_BASE_PATH}/images/icons/sello-urg.png)`,
+          // }}
         />
         <h1 className={styles.heading}><span className={styles.highlighted}>BOSQUES Y GLACIARES EN PELIGRO</span></h1>
         {/* <h1 className={styles.heading}><span className={styles.highlighted}>¡{(yesVotes && noVotes ? yesVotes + noVotes : "")!} PERSONAS VOTARON!</span></h1>
