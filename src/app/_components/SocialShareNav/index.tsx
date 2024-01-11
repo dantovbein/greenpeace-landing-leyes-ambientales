@@ -33,8 +33,8 @@ const Component: FunctionComponent<{}> = () => {
           />
         </WhatsappShareButton>
 
-        {/* <FacebookShareButton
-          hashtag='#SalvaLasLeyesAmbientales'
+        <FacebookShareButton
+          hashtag='#votaporlosbosques'
           title={`${process.env.NEXT_PUBLIC_TITLE_SHARE}`}
           about={`${process.env.NEXT_PUBLIC_TITLE_SHARE}`}
           url={`${process.env.NEXT_PUBLIC_FACEBOOK_URL_SHARE}`}
@@ -48,11 +48,11 @@ const Component: FunctionComponent<{}> = () => {
             width={64}
             height={64}
           />
-        </FacebookShareButton> */}
+        </FacebookShareButton>
 
-        {/* <TwitterShareButton
+        <TwitterShareButton
           title={`${process.env.NEXT_PUBLIC_TITLE_SHARE}`}
-          hashtags={['SalvaLasLeyesAmbientales']}
+          hashtags={['votaporlosbosques']}
           via='GreenpeaceArg'
           url={`${process.env.NEXT_PUBLIC_TWITTER_URL_SHARE}`}
           windowHeight={SHARE_MODAL_HEIGHT}
@@ -66,7 +66,7 @@ const Component: FunctionComponent<{}> = () => {
             width={64}
             height={64}
           />
-        </TwitterShareButton> */}
+        </TwitterShareButton>
         
         <LinkedinShareButton
           title={`${process.env.NEXT_PUBLIC_TITLE_SHARE}`}
