@@ -130,8 +130,8 @@ export const Component:FC<{}> = () => {
                 // citizenId: user.docNumber,
                 email: user.email,
                 // fullName: user.fullName,
-                firstname: user.firstName,
-                lastname: user.lastName,
+                firstName: user.firstName,
+                lastName: user.lastName,
                 // phoneNumber: user.phoneNumber,
                 // provincia: user.province,
                 userAgent: window.navigator.userAgent.replace(/;/g, '').replace(/,/g, ''),
@@ -193,7 +193,7 @@ export const Component:FC<{}> = () => {
                 name='firstName'
                 placeholder='Nombre'
                 value={user.firstName}
-                minLength={5}
+                minLength={2}
                 onChange={onChange}
               />
             </label>
@@ -204,7 +204,7 @@ export const Component:FC<{}> = () => {
                 name='lastName'
                 placeholder='Apellido'
                 value={user.lastName}
-                minLength={5}
+                minLength={2}
                 onChange={onChange}
               />
             </label>

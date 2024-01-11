@@ -8,7 +8,7 @@ const Page:FC<{}> = () => {
   return (
     <>
       <ThankYou>
-        <Stats />
+        {/* <Stats /> */}
       </ThankYou>
     </>
   )

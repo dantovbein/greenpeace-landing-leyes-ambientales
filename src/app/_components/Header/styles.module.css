@@ -86,11 +86,15 @@
 .urgentIcon {
   height: 122px;
   width: 342px;
-  transform: rotate(-10deg);
+  transform: scale(1.2) rotate(-10deg);
   margin: auto;
+  /* background-color: yellow; */
   background-repeat: no-repeat;
-  background-size: contain;
+  /* background-size: contain; */
+  background-size: 140% auto;
+  background-position: -70px -90px;
   margin-bottom: 50px;
+  background-image: url(https://imagedelivery.net/4UjGyQauyQ4cqduHdPPkww/2e6f995c-db65-4afb-c916-e1c69eb5a800/public);
 }
 
 @media (min-width: 992px) {
@@ -121,10 +125,11 @@
 
   .heading {
     font-size: 5rem;
-    width: 80%;
+    /* width: 80%; */
   }
 
   .urgentIcon {
     scale: 1.5;
+    margin-bottom: 100px;
   }
 }
