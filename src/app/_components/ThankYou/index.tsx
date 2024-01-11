@@ -24,6 +24,7 @@ export const Component:FC<IProps> = ({ children }) => {
     <div className={styles.main}>
       <h2 className={styles.heading}>Gracias <span className={styles.highlighted}>{user.firstName || ''}</span> por tu firma.</h2>
       { children }
+      <SocialShareNav />
     </div>
   )
 }
