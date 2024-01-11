@@ -47,10 +47,11 @@
   line-height: 120%;
   text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
   font-size: 4rem;
+  width: 90%;
+  margin: auto;
 }
 
 .highlighted {
-  /* color: #ffe100; */
   color: white;
 }
 
@@ -63,7 +64,7 @@
 
 .slider {
   position: relative;
-  height: 600px;
+  height: 500px;
 }
 
 .sliderWrapper {
@@ -78,7 +79,18 @@
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
+  /* background-size: cover; */
   background-size: cover;
+}
+
+.urgentIcon {
+  height: 122px;
+  width: 342px;
+  transform: rotate(-10deg);
+  margin: auto;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-bottom: 50px;
 }
 
 @media (min-width: 992px) {
@@ -87,12 +99,11 @@
   }
 
   .headerText {
-    bottom: 30px;
-    width: 75%;
+    bottom: 80px;
   }
 
   .headerText p {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     padding: 0 10px;
   }
 
@@ -109,6 +120,11 @@
   }
 
   .heading {
-    font-size: 4rem;
+    font-size: 5rem;
+    width: 80%;
+  }
+
+  .urgentIcon {
+    scale: 1.5;
   }
 }

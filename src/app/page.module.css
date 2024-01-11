@@ -28,16 +28,24 @@ p strong.highlighted {
   background-color: #c7ffbc;
 }
 
+main p.secondary {
+  font-size: 0.95rem !important;
+}
+
 .main p {
   font-size: 1.1rem;
   line-height: 175%;
-  margin-bottom: 1.1rem;
+  margin-bottom: 1.5rem;
   text-align: center;
 }
 
 @media (min-width: 992px) {
   .main p {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+  }
+
+  main p.secondary {
+    font-size: 1.1rem !important;
   }
 
   .logo {

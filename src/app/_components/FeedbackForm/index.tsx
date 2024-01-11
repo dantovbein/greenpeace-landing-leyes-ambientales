@@ -226,7 +226,7 @@ export const Component:FC<{}> = () => {
           type='submit'
           disabled={(submitting || submitted)}
         >
-          {submitting ? 'ENVIANDO ...' :'ENVIAR'}
+          {submitting ? 'ENVIANDO FIRMA...' :'FIRMAR'}
         </button>
       </nav>
       {(error) && <span className={styles.error}>{error}</span>}
