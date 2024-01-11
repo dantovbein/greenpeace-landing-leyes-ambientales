@@ -22,7 +22,7 @@ export default function Home() {
       <p>Esta regresión de derechos ambientales conquistados es completamente inadmisible. Las normas que pretenden modificarse fueron el resultado de largos debates democráticos y no deben cambiarse en beneficio de sectores corporativos, lo que provocará la destrucción impune de bosques y glaciares, entre otros ecosistemas.</p>
       <p><strong>¡Exigí a los legisladores que no modifiquen las leyes ambientales incluidas en el proyecto de Ley Ómnibus!</strong></p>
       <FeedbackForm />
-      <p className={styles.secondary}>Al firmar la petición automáticamente le estará llegando un correo a los legisladores con tu reclamo. Compartí para que nuestra presión crezca y podamos salvar las leyes ambientales.</p>
+      {/* <p className={styles.secondary}>Al firmar la petición automáticamente le estará llegando un correo a los legisladores con tu reclamo. Compartí para que nuestra presión crezca y podamos salvar las leyes ambientales.</p> */}
       {/* <div className={styles.logo} style={{backgroundImage: `url(${process.env.NEXT_PUBLIC_ASSET_PREFIX}images/gp-bosques-logo.svg)`}}/> */}
     </section>
   )
