@@ -46,7 +46,8 @@
 .heading {
   line-height: 120%;
   text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
-  font-size: 4rem;
+  /* font-size: 4rem; */
+  font-size: 3rem;
   width: 90%;
   margin: auto;
 }
@@ -86,7 +87,7 @@
 .urgentIcon {
   height: 122px;
   width: 342px;
-  transform: scale(1.2) rotate(-10deg);
+  transform: scale(1) rotate(-10deg);
   margin: auto;
   /* background-color: yellow; */
   background-repeat: no-repeat;
