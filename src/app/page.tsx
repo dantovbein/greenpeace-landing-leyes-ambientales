@@ -22,12 +22,12 @@ export default function Home() {
       <p><strong>¡Exigí a los legisladores que no modifiquen las leyes ambientales incluidas en el proyecto de Ley Ómnibus!</strong></p>
       <FeedbackForm />
       <Accordion />
-      <section className={styles.ngosWrapper}>
+      {/* <section className={styles.ngosWrapper}>
         <h2>Algunas de las organizaciones que nos apoyan</h2>
         <div className={styles.logos}>
           {['', '', '', '', '', '', ''].map((logo: string, idx: number) => <div key={idx} className={styles.logo} />)}
         </div>
-      </section>
+      </section> */}
     </section>
   )
 }
