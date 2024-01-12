@@ -30,7 +30,7 @@ export default function Home() {
       <FeedbackForm/>
       <Accordion />
       <section className={styles.ngosWrapper}>
-        <h2>Algunas de las organizaciones que nos apoyan</h2>
+        <h2>Promueven esta iniciativa</h2>
         <div className={styles.logos}>
           {[
             '89fa5fe1-a7be-472c-f019-b01016bf0100',
