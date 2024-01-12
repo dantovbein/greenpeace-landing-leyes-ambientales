@@ -2,6 +2,7 @@
 
 import { FC, useCallback, useEffect, useMemo, useState } from "react";
 import styles from '@/app/_components/Accordion/styles.module.css';
+import Image from "next/image";
 
 type ItemType = {heading: string, content: string};
 
@@ -43,7 +44,12 @@ const AccordionTab: FC<ItemType> = (props) => {
     <div className={`${styles.accordionTab} ${isOpen ? styles.open : ''}`}>
       <div className={styles.accordionTabButton} onClick={onClick}>
         <h1 className={styles.accordionTabHeading}>{props.heading}</h1>
-        <button>Ver {isOpen ? 'menos' : 'más'}</button>
+        <Image
+          src={`${process.env.NEXT_PUBLIC_BASE_PATH}/images/icons/right-arrow.svg`}
+          alt={`Ver ${isOpen ? 'menos' : 'más'}`}
+          width={20}
+          height={20}
+        />
       </div>
       <div className={styles.accordionTabContent} dangerouslySetInnerHTML={{__html: props.content}}/>
     </div>
