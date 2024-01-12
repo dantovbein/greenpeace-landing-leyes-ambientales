@@ -106,16 +106,10 @@ export const Component:FC<{}> = () => {
             body: JSON.stringify({
               email: user.email,
               votacion_leyes_ambientales: 'SI',
-              // fullName: user.fullName,
-              // firstname: user.firstName,
-              // lastname: user.lastName,
-              // phone: user.phoneNumber,
-              // lugar_de_residencia: user.province,
-              // dni__c: user.docNumber,
             }),
           }
         );
-        console.log(resHubsot.ok)
+
         if(resHubsot.ok) {
           window.dataLayer.push({
             event: "formSubmission",
@@ -127,13 +121,9 @@ export const Component:FC<{}> = () => {
               method: 'POST',
               headers,
               body: JSON.stringify({
-                // citizenId: user.docNumber,
                 email: user.email,
-                // fullName: user.fullName,
                 firstName: user.firstName,
                 lastName: user.lastName,
-                // phoneNumber: user.phoneNumber,
-                // provincia: user.province,
                 userAgent: window.navigator.userAgent.replace(/;/g, '').replace(/,/g, ''),
                 fromUrl: window.location.search || '?',
               }),
@@ -183,7 +173,7 @@ export const Component:FC<{}> = () => {
   ])
 
   return useMemo(() => (
-    <form className={styles.main} onSubmit={onSubmit}>
+    <form id='feedback-form' className={styles.main} onSubmit={onSubmit}>
       <h2 className={styles.subHeading}>Si querés sumar tu apoyo a la campaña y recibir información, completá el siguiente formulario:</h2>
       <div ref={userRef} className={styles.userSection}>
         <div className={styles.row}>

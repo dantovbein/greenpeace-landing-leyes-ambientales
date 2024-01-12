@@ -18,7 +18,7 @@
 .accordionTabButton {
   display: flex;
   width: 100%;
-  background-color: var(--gp-green);
+  background-color: #6c8b75;
   justify-content: space-between;
   padding: 1rem;
   border-radius: 5px;

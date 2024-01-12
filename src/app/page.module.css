@@ -57,8 +57,22 @@ main p.secondary {
 .logos .logo {
   width: 200px;
   height: 200px;
-  background-color: rgb(216, 216, 216);
   flex-wrap: wrap;
+  background-size: contain;
+  background-position: center center;
+}
+
+.ctaBtn {
+  background-color: var(--gp-green);
+  font-size: 1.2rem;
+  border-radius: 0.5rem;
+  padding: 0.75rem 2rem;
+  border: none;
+  margin: auto;
+  width: fit-content;
+  color: var(--white);
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 @media (min-width: 780px) {
@@ -85,8 +99,8 @@ main p.secondary {
     grid-template-columns: repeat(4, 1fr);
   }
 
-  .logos .logo {
+  /* .logos .logo {
     width: 230px;
     height: 230px;
-  }
+  } */
 }

@@ -65,7 +65,7 @@
 
 .slider {
   position: relative;
-  height: 500px;
+  height: 350px;
 }
 
 .sliderWrapper {
@@ -80,27 +80,22 @@
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
-  /* background-size: cover; */
   background-size: cover;
 }
 
 .urgentIcon {
-  height: 122px;
   width: 342px;
-  transform: scale(1) rotate(-10deg);
+  height: 122px;
+  transform: scale(.6) rotate(-10deg);
+  background-size: cover;
   margin: auto;
-  /* background-color: yellow; */
   background-repeat: no-repeat;
-  /* background-size: contain; */
-  background-size: 140% auto;
-  background-position: -70px -90px;
-  margin-bottom: 50px;
-  background-image: url(https://imagedelivery.net/4UjGyQauyQ4cqduHdPPkww/2e6f995c-db65-4afb-c916-e1c69eb5a800/public);
+  background-image: url(https://imagedelivery.net/4UjGyQauyQ4cqduHdPPkww/7d9af76e-f7dc-4dde-7002-6f9cf0e54800/public);
 }
 
 @media (min-width: 992px) {
   .slider {
-    height: 600px;
+    height: 500px;
   }
 
   .headerText {
@@ -126,11 +121,10 @@
 
   .heading {
     font-size: 5rem;
-    /* width: 80%; */
   }
 
   .urgentIcon {
-    scale: 1.5;
-    margin-bottom: 100px;
+    transform: scale(1.2) rotate(-10deg);
+    margin-bottom: 30px;
   }
 }
