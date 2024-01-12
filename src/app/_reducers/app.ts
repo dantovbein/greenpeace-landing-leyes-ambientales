@@ -13,15 +13,13 @@ export type UserType = {
   // province: string;
 }
 
-export type QuizType = {
-  yesVotes: number | null;
-  noVotes: number | null;
-  totalVotes?: number | null;
+export type SignsType = {
+  totalSigns: number;
 }
 
 export type DataType = {
   user: UserType;
-  quiz: QuizType;
+  signs: SignsType;
 }
 
 export type SharedState = {
@@ -35,17 +33,17 @@ export type SharedState = {
 export type SharedActions = 
   | { type: 'SUBMIT_FORM' }
   | { type: 'SUBMITTED_FORM' }
-  | { type: 'FETCH_VOTES' }
+  | { type: 'FETCH_SIGNS' }
   | { type: 'FETCHED_VOTES' }
-  | { type: 'RESET_VOTES' }
+  | { type: 'RESET_SIGNS' }
   | { type: 'ERROR', payload: { error: string | null; } }
   | { type: 'FAILURE', error: any }
   | { type: 'UPDATE_FIELD', payload: any }
-  | { type: 'UPDATE_QUIZ', payload: QuizType }
+  | { type: 'UPDATE_SIGNS', payload: SignsType }
 
 export type ContextStateType = {
   user: UserType;
-  quiz: QuizType;
+  signs: SignsType;
 } & SharedState;
 
 export type ContextActionType = SharedActions;
@@ -70,7 +68,7 @@ export const initialState: ContextStateType = {
       // province: 'Buenos Aires',
     } : {}),
   } as UserType,
-  quiz: {} as QuizType,
+  signs: {} as SignsType,
   submitted: false,
   submitting: false,
   fetching: false,
@@ -89,14 +87,12 @@ export const reducer: GenericReducerFn<ContextStateType, ContextActionType> = (s
         },
       }
     }
-    case 'UPDATE_QUIZ': {
+    case 'UPDATE_SIGNS': {
       return {
         ...state,
-        quiz: {
-          ...state.quiz,
-          yesVotes: action.payload.yesVotes,
-          noVotes: action.payload.noVotes,
-          totalVotes: (action.payload.yesVotes || 0) + (action.payload.noVotes || 0)
+        signs: {
+          ...state.signs,
+          totalSigns: action.payload.totalSigns,
         },
       }
     }
@@ -114,7 +110,7 @@ export const reducer: GenericReducerFn<ContextStateType, ContextActionType> = (s
         submitted: true,
       }
     }
-    case 'FETCH_VOTES': {
+    case 'FETCH_SIGNS': {
       return {
         ...state,
         fetching: true,
@@ -128,13 +124,11 @@ export const reducer: GenericReducerFn<ContextStateType, ContextActionType> = (s
         fetched: true,
       }
     }
-    case 'RESET_VOTES': {
+    case 'RESET_SIGNS': {
       return {
         ...state,
         quiz: {
-          yesVotes: null,
-          noVotes: null,
-          totalVotes: null,
+          totalSigns: 0,
         }
       }
     }

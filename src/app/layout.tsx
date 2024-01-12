@@ -1,4 +1,3 @@
-// import Image from 'next/image'
 import './globals.css'
 import styles from './layout.module.css'
 import Header from '@/app/_components/Header'
