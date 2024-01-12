@@ -5,7 +5,7 @@ import styles from '@/app/_components/Header/styles.module.css'
 
 const pictures: Array<string> = [
   'https://imagedelivery.net/4UjGyQauyQ4cqduHdPPkww/acdc174d-5c4a-4b41-af3a-d87756472200/public',
-  'https://imagedelivery.net/4UjGyQauyQ4cqduHdPPkww/acdc174d-5c4a-4b41-af3a-d87756472200/public',
+  'https://imagedelivery.net/4UjGyQauyQ4cqduHdPPkww/04fe415b-9269-443f-434b-395060692400/public',
 ];
 
 export default function Header() {
