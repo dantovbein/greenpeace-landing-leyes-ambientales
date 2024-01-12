@@ -1,6 +1,8 @@
 .accordion {
   display: flex;
   flex-direction: column;
+  overflow: hidden;
+  margin-top: 3rem;
 }
 
 .accordionTab {

@@ -31,7 +31,7 @@ export default function RootLayout({
         <meta property="og:description" content={`${process.env.NEXT_PUBLIC_META_DESCRIPTION}`} />
         <meta property="og:image" content="https://salvalasleyesambientales.org/images/gp-bosques-header.jpg" />
         <meta property="twitter:card" content={`${process.env.NEXT_PUBLIC_META_DESCRIPTION}`} />
-        <meta property="twitter:url" content=" https://salvalasleyesambientales.org" />
+        <meta property="twitter:url" content="https://salvalasleyesambientales.org" />
         <meta property="twitter:title" content={`${process.env.NEXT_PUBLIC_META_TITLE}`} />
         <meta property="twitter:description" content={`${process.env.NEXT_PUBLIC_META_DESCRIPTION}`} />
         <meta property="twitter:image" content='https://salvalasleyesambientales.org/images/gp-bosques-header.jpg' />

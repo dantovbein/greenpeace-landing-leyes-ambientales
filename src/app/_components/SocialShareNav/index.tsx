@@ -15,7 +15,7 @@ const SHARE_MODAL_WIDTH = 700;
 const Component: FunctionComponent<{}> = () => {
   return (
     <div>
-      <h4 className={styles.title}>Compartí para sumar tu apoyo en defensa de las Leyes Ambientales</h4>
+      <span className={styles.title}>Compartí para sumar tu apoyo en defensa de las Leyes Ambientales</span>
       <nav className={styles.socialNav}>
         <WhatsappShareButton
           url={`${process.env.NEXT_PUBLIC_WHATSAPP_URL_SHARE}`}
@@ -34,7 +34,7 @@ const Component: FunctionComponent<{}> = () => {
         </WhatsappShareButton>
 
         <FacebookShareButton
-          hashtag='#votaporlosbosques'
+          hashtag='#SalvaLasLeyesAmbientales'
           title={`${process.env.NEXT_PUBLIC_TITLE_SHARE}`}
           about={`${process.env.NEXT_PUBLIC_TITLE_SHARE}`}
           url={`${process.env.NEXT_PUBLIC_FACEBOOK_URL_SHARE}`}
@@ -52,7 +52,7 @@ const Component: FunctionComponent<{}> = () => {
 
         <TwitterShareButton
           title={`${process.env.NEXT_PUBLIC_TITLE_SHARE}`}
-          hashtags={['votaporlosbosques']}
+          hashtags={['SalvaLasLeyesAmbientales']}
           via='GreenpeaceArg'
           url={`${process.env.NEXT_PUBLIC_TWITTER_URL_SHARE}`}
           windowHeight={SHARE_MODAL_HEIGHT}

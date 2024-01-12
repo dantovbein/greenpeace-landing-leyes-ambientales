@@ -20,7 +20,7 @@ const Component: FC<{}> = () => {
           
           {!fetching && fetched && (
             <>
-              <span>Ya firmaron <strong>{totalSigns}</strong> personas</span>
+              <span>Ya firmaron <strong style={{color: 'red', fontSize: '1.5rem'}}>{totalSigns}</strong> personas para defender nuestra Leyes Ambientales</span>
             </>
           )}
         </div>

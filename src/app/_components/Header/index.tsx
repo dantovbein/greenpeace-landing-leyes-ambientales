@@ -5,6 +5,7 @@ import styles from '@/app/_components/Header/styles.module.css'
 
 const pictures: Array<string> = [
   'https://imagedelivery.net/4UjGyQauyQ4cqduHdPPkww/acdc174d-5c4a-4b41-af3a-d87756472200/public',
+  'https://imagedelivery.net/4UjGyQauyQ4cqduHdPPkww/acdc174d-5c4a-4b41-af3a-d87756472200/public',
 ];
 
 export default function Header() {
@@ -29,7 +30,7 @@ export default function Header() {
   return useMemo(() => (
     <header className={styles.main}>
       <div className={styles.topBar}>
-        <h4>#SalváLasLeyesAmbientales</h4>
+        <h4>#SalvaLasLeyesAmbientales</h4>
       </div>
 
       <div className={styles.slider}>
