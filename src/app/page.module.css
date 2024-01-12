@@ -55,8 +55,8 @@ main p.secondary {
 }
 
 .logos .logo {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   flex-wrap: wrap;
   background-size: contain;
   background-position: center center;
