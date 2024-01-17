@@ -97,54 +97,35 @@ export const Component:FC<{}> = () => {
     if(validate()) {
       if(window.navigator.onLine) {
         dispatch({ type: 'SUBMIT_FORM' });
-  
-        const resHubsot = await fetch(
-          `${process.env.NEXT_PUBLIC_GP_API}hubspot/contact`,
+        
+        window.dataLayer.push({
+          event: "formSubmission",
+        });
+
+        const signResponse = await fetch(
+          `${process.env.NEXT_PUBLIC_GP_API}campaign/salva-las-leyes-ambientales/sign?form_id=${process.env.NEXT_PUBLIC_CONTACT_FORM_ID}&hb_campaign_field=votacion_leyes_ambientales`,
           {
             method: 'POST',
             headers,
             body: JSON.stringify({
               email: user.email,
-              votacion_leyes_ambientales: 'SI',
+              firstName: user.firstName,
+              lastName: user.lastName,
+              userAgent: window.navigator.userAgent.replace(/;/g, '').replace(/,/g, ''),
+              fromUrl: window.location.search || '?',
             }),
           }
         );
 
-        if(resHubsot.ok) {
-          window.dataLayer.push({
-            event: "formSubmission",
-          });
-
-          const resForma = await fetch(
-            `${process.env.NEXT_PUBLIC_GP_API}forma/form/${process.env.NEXT_PUBLIC_CONTACT_FORM_ID}/record`,
-            {
-              method: 'POST',
-              headers,
-              body: JSON.stringify({
-                email: user.email,
-                firstName: user.firstName,
-                lastName: user.lastName,
-                userAgent: window.navigator.userAgent.replace(/;/g, '').replace(/,/g, ''),
-                fromUrl: window.location.search || '?',
-              }),
-            }
-          );
-
-          if(resForma.ok) {
-            dispatch({ type: 'SUBMITTED_FORM' });
-          } else {
-            dispatch({
-              type: 'FAILURE',
-              error: 'Hubo un error inesperado. Volvé a intentar en unos segundos.'
-            })
-          }
-
+        if(signResponse.ok) {
+          dispatch({ type: 'SUBMITTED_FORM' });
         } else {
+          const error = await signResponse.json();
           dispatch({
             type: 'FAILURE',
-            error: 'Hemos detectado un error en el email.',
+            error: error.errorMessage || 'Error',//'Hubo un error inesperado. Volvé a intentar en unos segundos.'
           });
-        }    
+        }
       } 
     } else {
       console.log('Formulario inválido')

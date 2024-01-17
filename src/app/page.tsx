@@ -56,6 +56,15 @@ export default function Home() {
             'c2fd9752-2fd7-4c04-5eb4-ec4a75d61300',
             '2f95adf8-69dc-4008-05d9-d44771e6a500',
             'd69f5ef7-a294-44c0-a058-b88860ec5100',
+            '052748a0-9ae1-4c50-e79b-8942b28fd900',
+            'e37fcf9c-30f9-42ca-516d-32a583f1cc00',
+            '02fa065d-a9e0-45f6-de21-2f508ca2cb00',
+            '85e2cb91-e0a8-4da1-c595-398f6a989c00',
+            'a3aec85e-4bb0-4d74-c650-5cd2271c6900',
+            'ffa3e008-1bd5-484b-7d9a-9be67cc35300',
+            '1fc87741-0927-4f1b-501e-6f5c7d316a00',
+            'f64f89c9-35ef-471b-bffb-35b2a1ec2000',
+            '34386ac1-b507-4b21-d2cb-dfed47398e00',
           ].map((logo: string) => {
             return <div
               key={logo}
