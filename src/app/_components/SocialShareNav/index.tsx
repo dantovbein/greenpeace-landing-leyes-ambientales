@@ -15,7 +15,7 @@ const SHARE_MODAL_WIDTH = 700;
 const Component: FunctionComponent<{}> = () => {
   return (
     <div>
-      <h2 className={styles.title}> ¡Urgente! ¡Compatílo en a tus redes!</h2>
+      <h2 className={styles.title}>¡Urgente! ¡Compartílo en tus redes!</h2>
       <p style={{textAlign: 'center'}}>Ahora que firmaste, por favor compartí esta página en tus redes sociales para que más personas puedan alzar la voz en apoyo en defensa de las Leyes Ambientales.</p>
       <nav className={styles.socialNav}>
         <WhatsappShareButton
