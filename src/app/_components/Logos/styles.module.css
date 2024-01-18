@@ -1,0 +1,40 @@
+.main {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.logos {
+  width: 100%;
+  display: inline-grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  gap: 20px;
+}
+
+.logo {
+  margin: auto;
+  width: 150px;
+  height: 150px;
+  background-repeat: no-repeat;
+  flex-wrap: wrap;
+  background-size: contain;
+  background-position: center center;
+}
+
+@media (min-width: 780px) {
+  .logos {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .logo {
+    width: 230px;
+    height: 230px;
+  }
+}
+
+@media (min-width: 992px) {
+  .logos {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

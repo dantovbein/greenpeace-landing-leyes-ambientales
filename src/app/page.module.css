@@ -40,28 +40,6 @@ main p.secondary {
   text-align: center;
 }
 
-.logos {
-  width: 100%;
-  display: inline-grid;
-  grid-template-columns: repeat(2, 1fr);
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-  gap: 20px;
-}
-
-.ngosWrapper {
-  margin-top: 4rem;
-  text-align: center;
-}
-
-.logos .logo {
-  width: 150px;
-  height: 150px;
-  flex-wrap: wrap;
-  background-size: contain;
-  background-position: center center;
-}
-
 .ctaBtn {
   background-color: var(--gp-green);
   font-size: 1.2rem;
@@ -75,17 +53,6 @@ main p.secondary {
   transition: all 0.3s ease;
 }
 
-@media (min-width: 780px) {
-  .logos {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .logos .logo {
-    width: 230px;
-    height: 230px;
-  }
-}
-
 @media (min-width: 992px) {
   .main p {
     font-size: 1.3rem;
@@ -94,13 +61,4 @@ main p.secondary {
   main p.secondary {
     font-size: 1.1rem !important;
   }
-
-  .logos {
-    grid-template-columns: repeat(4, 1fr);
-  }
-
-  /* .logos .logo {
-    width: 230px;
-    height: 230px;
-  } */
 }
