@@ -200,6 +200,7 @@ export const Component:FC<{}> = () => {
           {submitting ? 'ENVIANDO FIRMA...' :'FIRMAR'}
         </button>
       </nav>
+      <span style={{marginTop: '30px', textAlign: 'center'}}>Al firmar la petición automáticamente le estará llegando un correo a los legisladores con tu reclamo. Compartí para que nuestra presión crezca y podamos salvar las leyes ambientales.</span>
       {(error) && <span className={styles.error}>{error}</span>}
     </form>
   ), [
