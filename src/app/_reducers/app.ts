@@ -8,7 +8,7 @@ export type UserType = {
   lastName: string;
   // fullName: string;
   email: string;
-  // phoneNumber: string;
+  phoneNumber: string;
   // docNumber: string;
   // province: string;
 }
@@ -63,7 +63,7 @@ export const initialState: ContextStateType = {
       lastName: 'Deer',
       // fullName: 'Doe Deer',
       // docNumber: '12345678',
-      // phoneNumber: '44440000',
+      phoneNumber: '44440000',
       email: 'doe.deer@email.com',
       // province: 'Buenos Aires',
     } : {}),

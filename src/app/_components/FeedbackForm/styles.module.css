@@ -101,6 +101,11 @@
   justify-content: center;
 }
 
+.column input + small {
+  margin-top: 10px;
+  display: block;
+}
+
 .column select,
 .column input:not([type="checkbox"]) {
   width: inherit;
@@ -165,7 +170,7 @@
   }
   
   .column {
-    align-items: flex-end;
+    align-items: flex-start;
     padding: 0.5rem;
   }
 

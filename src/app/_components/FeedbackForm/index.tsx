@@ -111,6 +111,7 @@ export const Component:FC<{}> = () => {
               email: user.email,
               firstName: user.firstName,
               lastName: user.lastName,
+              phoneNumber: user.phoneNumber || '',
               userAgent: window.navigator.userAgent.replace(/;/g, '').replace(/,/g, ''),
               fromUrl: window.location.search || '?',
             }),
@@ -162,7 +163,7 @@ export const Component:FC<{}> = () => {
             <label htmlFor='firstName'>
               <input
                 name='firstName'
-                placeholder='Nombre'
+                placeholder='Nombre (*)'
                 value={user.firstName}
                 minLength={2}
                 onChange={onChange}
@@ -173,7 +174,7 @@ export const Component:FC<{}> = () => {
             <label htmlFor='lastName'>
               <input
                 name='lastName'
-                placeholder='Apellido'
+                placeholder='Apellido (*)'
                 value={user.lastName}
                 minLength={2}
                 onChange={onChange}
@@ -183,11 +184,15 @@ export const Component:FC<{}> = () => {
         </div>
         <div className={styles.row}>
           <div className={styles.column}>
-            <div className={styles.column}>
-              <label htmlFor='email'>
-                <input onChange={onChange} type='email' name='email' placeholder='Correo electrónico' value={user.email} />
-              </label>
-            </div>
+            <label htmlFor='email'>
+              <input onChange={onChange} type='email' name='email' placeholder='Correo electrónico (*)' value={user.email} />
+            </label>
+          </div>
+          <div className={styles.column} style={{display: 'none'}}>
+            <label htmlFor='phoneNumber'>
+              <input onChange={onChange} type='phoneNumber' name='phoneNumber' placeholder='Número de teléfono' value={user.phoneNumber} />
+              <small>(*) opcional</small>
+            </label>
           </div>
         </div>
       </div>
@@ -200,8 +205,8 @@ export const Component:FC<{}> = () => {
           {submitting ? 'ENVIANDO FIRMA...' :'FIRMAR'}
         </button>
       </nav>
-      <span style={{marginTop: '30px', textAlign: 'center'}}>Al firmar la petición automáticamente le estará llegando un correo a los legisladores con tu reclamo. Compartí para que nuestra presión crezca y podamos salvar las leyes ambientales.</span>
       {(error) && <span className={styles.error}>{error}</span>}
+      <span style={{marginTop: '30px', textAlign: 'center'}}>Al firmar la petición automáticamente le estará llegando un correo a los legisladores con tu reclamo. Compartí para que nuestra presión crezca y podamos salvar las leyes ambientales.</span>
     </form>
   ), [
     user,

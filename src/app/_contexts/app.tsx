@@ -32,7 +32,7 @@ export const Provider: React.FunctionComponent<IProps> = ({ children }) => {
     dispatch({
       type: 'UPDATE_SIGNS',
       payload: {
-        totalSigns: signs.total || 0,
+        totalSigns: (signs.total || 0) + 76050, // Hardcoded from form id 98
       }
     })
     
