@@ -54,7 +54,6 @@ const Component: FunctionComponent<{}> = () => {
         <TwitterShareButton
           title={`${process.env.NEXT_PUBLIC_TITLE_SHARE}`}
           hashtags={['SalvaLasLeyesAmbientales']}
-          via='GreenpeaceArg'
           url={`${process.env.NEXT_PUBLIC_TWITTER_URL_SHARE}`}
           windowHeight={SHARE_MODAL_HEIGHT}
           windowWidth={SHARE_MODAL_WIDTH}
