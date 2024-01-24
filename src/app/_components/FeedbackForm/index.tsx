@@ -98,10 +98,6 @@ export const Component:FC<{}> = () => {
       if(window.navigator.onLine) {
         dispatch({ type: 'SUBMIT_FORM' });
         
-        window.dataLayer.push({
-          event: "formSubmission",
-        });
-
         const signResponse = await fetch(
           `${process.env.NEXT_PUBLIC_GP_API}campaign/salva-las-leyes-ambientales/sign?form_id=${process.env.NEXT_PUBLIC_CONTACT_FORM_ID}&hb_campaign_field=votacion_leyes_ambientales`,
           {
@@ -119,6 +115,10 @@ export const Component:FC<{}> = () => {
         );
 
         if(signResponse.ok) {
+          window.dataLayer.push({
+            event: "formSubmission",
+          });
+          
           dispatch({ type: 'SUBMITTED_FORM' });
         } else {
           const error = await signResponse.json();
