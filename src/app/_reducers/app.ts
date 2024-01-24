@@ -36,6 +36,7 @@ export type SharedActions =
   | { type: 'FETCH_SIGNS' }
   | { type: 'FETCHED_VOTES' }
   | { type: 'RESET_SIGNS' }
+  | { type: 'RESET_FORM' }
   | { type: 'ERROR', payload: { error: string | null; } }
   | { type: 'FAILURE', error: any }
   | { type: 'UPDATE_FIELD', payload: any }
@@ -130,6 +131,13 @@ export const reducer: GenericReducerFn<ContextStateType, ContextActionType> = (s
         quiz: {
           totalSigns: 0,
         }
+      }
+    }
+    case 'RESET_FORM': {
+      return {
+        ...state,
+        submitting: false,
+        submitted: false,
       }
     }
     case 'FAILURE': {

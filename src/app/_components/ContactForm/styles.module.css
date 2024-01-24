@@ -1,0 +1,54 @@
+.main {
+  width: 70%;
+  margin: 30px auto;
+}
+
+.main input {
+  width: inherit;
+  padding: 0.75rem;
+  font-size: 1.15rem;
+  outline: none;
+  border: none;
+  border-bottom: solid 2px gray;
+  background: transparent;
+  text-align: center;
+}
+
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.submitBtn {
+  background-color: var(--gp-green);
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+  border: none;
+  /* width: 100%; */
+  color: var(--white);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submitBtn.disable {
+  pointer-events: none;
+  background-color: rgb(221, 221, 221);
+}
+
+.submitBtn:disabled {
+  background-color: rgb(221, 221, 221);
+  pointer-events: none;
+}
+
+.message {
+  display: block;
+  margin-top: 2rem;
+  color: rgb(50, 50, 50);
+  background-color: rgba(144, 238, 144, 0.285);
+  padding: 10px;
+  /* width: fit-content; */
+  /* margin: auto; */
+}
