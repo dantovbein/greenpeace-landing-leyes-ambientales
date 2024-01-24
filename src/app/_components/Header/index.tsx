@@ -4,8 +4,8 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import styles from '@/app/_components/Header/styles.module.css'
 
 const pictures: Array<string> = [
-  'https://imagedelivery.net/4UjGyQauyQ4cqduHdPPkww/acdc174d-5c4a-4b41-af3a-d87756472200/public',
-  'https://imagedelivery.net/4UjGyQauyQ4cqduHdPPkww/04fe415b-9269-443f-434b-395060692400/public',
+  // 'https://imagedelivery.net/4UjGyQauyQ4cqduHdPPkww/acdc174d-5c4a-4b41-af3a-d87756472200/public',
+  // 'https://imagedelivery.net/4UjGyQauyQ4cqduHdPPkww/04fe415b-9269-443f-434b-395060692400/public',
 ];
 
 export default function Header() {
@@ -33,7 +33,7 @@ export default function Header() {
         <h4>#SalvaLasLeyesAmbientales</h4>
       </div>
 
-      <div className={styles.slider}>
+      {/* <div className={styles.slider}>
         <div
           ref={sliderWrapperRef}
           className={styles.sliderWrapper}
@@ -52,11 +52,14 @@ export default function Header() {
             />
           ))}
         </div>
+      </div> */}
+      <div className={styles.videoPlayer}>
+      <iframe width="800" height="500" src="https://www.youtube.com/embed/cbQ_3IoWEp4?si=EYoHLF8a1Ux3aa3y" title="Salva las Leyes Ambientales" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
       </div>
-      <div className={styles.headerText}>
+      {/* <div className={styles.headerText}>
         <div className={styles.urgentIcon} />
         <h1 className={styles.heading}><span className={styles.highlighted}>BOSQUES Y GLACIARES EN PELIGRO</span></h1>
-      </div>
+      </div> */}
     </header>
   ), [
     currentSlide,
