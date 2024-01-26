@@ -11,12 +11,12 @@ const data: Array<ItemType> = [
     heading: 'Ley de Bosques',
     content: `
       <h2>¿Cómo podría afectar el proyecto de Ley Ómnibus si se aprueba?</h2>
-      <p>Desde la sanción de la Ley de Bosques (2007) la deforestación bajó un 40% comparado a la década anterior. Gracias a la norma, en el 80% de los bosques del país se prohíben autorizar desmontes (Categorías rojo y amarillo). </p>
+      <p>Desde la sanción de la Ley de Bosques (2007) la deforestación bajó un 40% comparado a la década anterior. Gracias a la norma, en el 80% de los bosques del país se prohíben autorizar desmontes (Categorías rojo y amarillo).</p>
       <p>Se deben hacer estudios de impacto ambiental y audiencias públicas antes de aprobar un desmonte (en Categoría verde), y no se permite deforestar en territorios indígenas. Sin embargo, la mitad de los desmontes son ilegales.</p>
       <p>Las multas no están sirviendo para frenarlos. Ante esto, en 2023, mediante una Consulta Popular el 99% de un total de 260 mil argentinos se manifestó a favor de penalizar desmontes ilegales e incendios.</p>
-      <p>Las modificaciones propuestas en la Ley Ómnibus permitirán que los gobiernos provinciales autoricen desmontes donde hoy está prohibido, y las topadoras podrán arrasar impunemente bosques para producción agropecuaria (soja y ganadería) y desarrollos inmobiliarios.</p>
-      <p>Además se desfinancia la ley, lo que repercutirá seriamente en los controles al desmonte ilegal y los incendios forestales, y en el fomento de actividades sustentables en los bosques. Por otra parte, se eliminarán mecanismos de acceso a información de comunidades indígenas y campesinas.</p>
-      <p>La ley es una herramienta clave fundamental para salvar los bosques. No podemos permitir su destrucción. </p>
+      <p>Gracias a la presión de la gente y de organizaciones sociales de todo el país, el nuevo proyecto de Ley Ómnibus deja de permitir que los gobiernos provinciales autoricen desmontes donde hoy está prohibido, y arrasar impunemente bosques para producción agropecuaria (soja y ganadería) y desarrollos inmobiliarios.</p>
+      <p>Pero en el nuevo proyecto se desfinancia la ley, lo que repercutirá seriamente en los controles al desmonte ilegal y los incendios forestales, y en el fomento de actividades sustentables en los bosques. </p>
+      <p>La ley es una herramienta clave para salvar los bosques. No podemos permitir su destrucción.</p>
     `,
   },
   {
